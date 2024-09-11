@@ -9,6 +9,14 @@ import base64
 import os
 import sklearn
 import xgboost as xgb
+import requests
+from io import StringIO
+
+# GitHub repository details
+GITHUB_TOKEN = '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'  # Replace with your GitHub personal access token
+REPO_OWNER = 'RayyanPP'                      # Replace with your GitHub username
+REPO_NAME = 'project'                        # Replace with your repository name
+FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repository
 
 # Load model info
 with open('model_info.json', 'r') as f:
@@ -64,31 +72,55 @@ def remove_bg():
         unsafe_allow_html=True
     )
 def save_to_file(name, email, message):
-    file_path = r'https://github.com/RayyanPP/project/blob/main/file_path.csv'
+    url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{FILE_PATH}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    
     try:
-        if os.path.exists(file_path):
-            df = pd.read_csv(file_path)
-            new_entry = pd.DataFrame({
-                'Name': [name],
-                'Email': [email],
-                'Message': [message],
-                'Timestamp': [datetime.datetime.now()]
-            })
-            df = pd.concat([df, new_entry], ignore_index=True)
-            df.to_csv(file_path, index=False)
-        else:
-            df = pd.DataFrame({
-                'Name': [name],
-                'Email': [email],
-                'Message': [message],
-                'Timestamp': [datetime.datetime.now()]
-            })
-            df.to_csv(file_path, index=False)
+        # Get the current file content from GitHub
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        content = response.json()
+        file_sha = content['sha']  # Current SHA of the file
+        
+        # Decode the current content and load it into a DataFrame
+        csv_content = base64.b64decode(content['content']).decode('utf-8')
+        df = pd.read_csv(StringIO(csv_content))
+        
+        # Append the new data
+        new_entry = pd.DataFrame({
+            'Name': [name],
+            'Email': [email],
+            'Message': [message],
+            'Timestamp': [datetime.datetime.now()]
+        })
+        df = pd.concat([df, new_entry], ignore_index=True)
+        
+        # Convert the updated DataFrame back to CSV
+        updated_csv = df.to_csv(index=False)
+        
+        # Encode updated CSV content to base64
+        updated_content = base64.b64encode(updated_csv.encode()).decode('utf-8')
+        
+        # Prepare the payload for GitHub API
+        data = {
+            "message": "Updated contact details",
+            "content": updated_content,
+            "sha": file_sha
+        }
+        
+        # Commit the updated file to GitHub
+        response = requests.put(url, headers=headers, json=data)
+        response.raise_for_status()
+        
         return True
+    
     except Exception as e:
-        print(f"Failed to save data: {e}")
+        st.error(f"Failed to save data: {e}")
         return False
-
+        
 def show_home_page():
     add_bg_from_local(r'seccar.jpg')  # Ensure the path is correct
     st.markdown('<h1 class="main-title">Car Price Prediction Using Hybrid ML Model</h1>', unsafe_allow_html=True)
