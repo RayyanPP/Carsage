@@ -13,7 +13,7 @@ import requests
 from io import StringIO
 
 # GitHub repository details
-GITHUB_TOKEN = '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'  # Replace with your GitHub personal access token
+GITHUB_TOKEN = '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'  # Replace with your GitHub personal access token
 REPO_OWNER = 'RayyanPP'                      # Replace with your GitHub username
 REPO_NAME = 'project'                        # Replace with your repository name
 FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repository
