@@ -1,0 +1,8 @@
+{
+    "xgb_model_path": "xgb_model.json",
+    "gb_model_path": "gb_model.pkl",
+    "weights": {
+        "weight3": 0.5153937032325668,
+        "weight4": 0.48460629676743316
+    }
+}
