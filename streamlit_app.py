@@ -64,7 +64,7 @@ def remove_bg():
         unsafe_allow_html=True
     )
 def save_to_file(name, email, message):
-    file_path = r'C:\Users\HP\Desktop\file_path.csv'
+    file_path = r'file_path.csv'
     try:
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
