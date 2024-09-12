@@ -457,6 +457,7 @@ def add_sidebar_styles():
     )
 
 def main():
+    add_sidebar_styles()
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
