@@ -11,8 +11,11 @@ import sklearn
 import xgboost as xgb
 import requests
 from io import StringIO
+from dotenv import load_dotenv
 
 # GitHub repository details
+
+load_dotenv()
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')  # Replace with your GitHub personal access token
 if not GITHUB_TOKEN:
     raise ValueError("GitHub token not found. Please set the GITHUB_TOKEN environment variable.")
@@ -428,4 +431,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
