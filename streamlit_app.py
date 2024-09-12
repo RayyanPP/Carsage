@@ -416,40 +416,43 @@ def show_help_and_support():
     # Add links to external documentation or resources
     #st.subheader("Additional Resources")
     #st.write("For more detailed documentation, please visit our [Documentation Page](https://example.com/docs).")
+
 def add_sidebar_styles():
     st.markdown(
         """
         <style>
-        /* Sidebar background color */
+        /* Sidebar container */
         [data-testid="stSidebar"] {
-            background-color: #f0f2f6;
-            padding: 20px;
+            background-color: #E0F7E9; /* Soft pastel mint */
+            padding-top: 20px; /* Padding at the top */
         }
-        /* Sidebar header */
-        .sidebar .sidebar-content h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
+
+        /* Sidebar title and widget headers */
+        .css-1d391kg { /* This may vary; check actual class in your browser */
+            color: #2C3E50; /* Dark grey for text */
+            font-weight: bold; /* Bold text */
+            font-size: 1.5rem; /* Increase font size */
         }
-        /* Sidebar selectbox styles */
-        .stSelectbox > div:first-child {
-            background-color: #E0F7E9; /* Tomato Red */
-            color: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 20px;
-            font-weight: bold;
+
+        /* Sidebar selectbox styling */
+        .css-1cpxqw2 {
+            background-color: #B2DFDB; /* Light pastel cyan */
+            color: #004D40; /* Dark cyan text */
+            border-radius: 10px; /* Rounded corners */
+            padding: 8px; /* Padding for selectbox */
         }
-        /* Navigation menu item hover */
-        .stSelectbox .css-1cpxqw2:hover {
-            background-color: #ffa07a; /* Light Salmon */
-            color: black;
+
+        /* Sidebar items on hover */
+        .css-1cpxqw2:hover {
+            background-color: #A5D6A7; /* Light green on hover */
+            color: black; /* Black text on hover */
         }
-        /* Sidebar titles */
-        .css-18e3th9 {
-            font-family: 'Roboto', sans-serif; /* Change font family */
-            color: #2c3e50; /* Change text color */
-            font-weight: bold; /* Make text bold */
+
+        /* Sidebar titles (like "Navigation") */
+        .css-1d391kg h1 {
+            font-family: 'Roboto', sans-serif; /* Font family */
+            color: #2C3E50; /* Text color */
+            margin-bottom: 10px; /* Space below */
         }
         </style>
         """,
