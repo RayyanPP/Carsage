@@ -468,60 +468,9 @@ def add_sidebar_styles():
         unsafe_allow_html=True
     )
 
-def add_main_selectbox_styles():
-    st.markdown(
-        """
-        <style>
-        /* Main selectbox input styling */
-        div[data-baseweb="select"] > div {
-            background-color: #FFFFFF !important; /* Black background */
-            color: #000000 !important; /* White text */
-            border-radius: 5px !important; /* Rounded corners */
-            padding: 10px !important; /* Padding for input */
-            border: 1px solid #555555 !important; /* Gray border */
-        }
-        /* Main selectbox dropdown options */
-        div[data-baseweb="select"] > div > div > ul > li {
-            background-color: #F5F5F5 !important; /* Black background */
-            color: #000000 !important; /* White text */
-        }
-        /* Hover effect for dropdown options */
-        div[data-baseweb="select"] > div > div > ul > li:hover {
-            background-color: #555555 !important; /* Darker hover effect */
-            color: #000000 !important; /* White text on hover */
-        }
-        /* Selected option in the dropdown */
-        div[data-baseweb="select"] div[aria-selected="true"] {
-            background-color: #FFFFFF !important; /* Black background */
-            color: #000000 !important; /* White text */
-        }
-        /* Ensure the text of the selected option in the closed dropdown is white */
-        div[data-baseweb="select"] div[class*="valueContainer"] div {
-            color: #000000 !important; /* White text for selected option */
-        }
-        /* Number input box styling */
-        input[type="number"] {
-            background-color: #FFFFFF !important; /* Black background */
-            color: #000000 !important; /* White text */
-            border-radius: 5px !important; /* Rounded corners */
-            padding: 10px !important; /* Padding for input */
-            border: 1px solid #555555 !important; /* Gray border */
-        }
-        
-        /* Styling for + and - buttons */
-        .stTextInput button {
-            color: #000000 !important; /* White text */
-            background-color: #000000 !important; /* Black background */
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
 
 def main():
     add_sidebar_styles()
-    add_main_selectbox_styles()
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
