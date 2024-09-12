@@ -444,7 +444,7 @@ def add_sidebar_styles():
 
         /* Sidebar items on hover */
         .css-1cpxqw2:hover {
-            background-color: #A5D6A7; /* Light green on hover */
+            background-color: #228B22; /* Light green on hover */
             color: black; /* Black text on hover */
         }
 
