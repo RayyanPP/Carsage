@@ -433,7 +433,7 @@ def add_sidebar_styles():
         }
         /* Sidebar selectbox styles */
         .stSelectbox > div:first-child {
-            background-color: #ff6347; /* Tomato Red */
+            background-color: #E0F7E9; /* Tomato Red */
             color: white;
             border-radius: 10px;
             padding: 10px;
