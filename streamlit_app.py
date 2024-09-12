@@ -423,7 +423,7 @@ def add_sidebar_styles():
         <style>
         /* Sidebar container */
         [data-testid="stSidebar"] {
-            background-color: #E0F7E9; /* Soft pastel mint */
+            background-color: #556B2F; /* Soft pastel mint */
             padding-top: 20px; /* Padding at the top */
         }
 
