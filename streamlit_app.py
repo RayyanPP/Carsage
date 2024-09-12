@@ -489,7 +489,7 @@ def add_main_selectbox_styles():
 
         /* Hover effect for dropdown options */
         div[data-baseweb="select"] > div > div > ul > li:hover {
-            background-color: #333333 !important; /* Darker hover effect */
+            background-color: #555555 !important; /* Darker hover effect */
             color: #FFFFFF !important; /* White text on hover */
         }
 
