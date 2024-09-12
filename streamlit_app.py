@@ -429,7 +429,7 @@ def add_sidebar_styles():
 
         /* Sidebar title and widget headers */
         .css-1d391kg { /* This may vary; check actual class in your browser */
-            color: #2C3E50; /* Dark grey for text */
+            color: #FFFFFF; /* Dark grey for text */
             font-weight: bold; /* Bold text */
             font-size: 1.5rem; /* Increase font size */
         }
