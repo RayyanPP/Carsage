@@ -149,7 +149,7 @@ def show_home_page():
         margin: 20px 0; /* Margin above and below */
         }
     .sub-text {
-        color: #7f8c8d; /* Greyish blue */
+        color: #4C0225; /* Greyish blue */
         text-align: center; /* Center alignment */
         font-family: 'Roboto', sans-serif; /* Custom font */
         font-size: 1.1em; /* Medium font size */
