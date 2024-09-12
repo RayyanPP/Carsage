@@ -139,8 +139,8 @@ def show_home_page():
     .main-title {
         color: #ff6347; /* Tomato Red */
         text-align: center; /* Center alignment */
-        font-family: 'Roboto', sans-serif; /* Custom font */
-        font-size: 3em; /* Large font size */
+        font-family: 'Pacifico', cursive; /* Custom font */
+        font-size: 2.9em; /* Large font size */
         font-weight: bold; /* Bold text */
         text-transform: uppercase; /* Uppercase text */
         background: linear-gradient(90deg, rgba(255,99,71,1) 100%, rgba(255,255,255,1) 100%); /* Gradient background */
