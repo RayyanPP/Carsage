@@ -149,9 +149,9 @@ def show_home_page():
         margin: 20px 0; /* Margin above and below */
         }
     .sub-text {
-        color: #4C0225; /* Greyish blue */
+        color: #EC137A; /* Greyish blue */
         text-align: center; /* Center alignment */
-        font-family: 'Roboto', sans-serif; /* Custom font */
+        font-family: 'Pacifico', cursive; /* Custom font */
         font-size: 1.1em; /* Medium font size */
         margin-top: 10px; /* Margin above */
     }
