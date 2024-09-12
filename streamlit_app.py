@@ -480,19 +480,16 @@ def add_main_selectbox_styles():
             padding: 10px !important; /* Padding for input */
             border: 1px solid #555555 !important; /* Gray border */
         }
-
         /* Main selectbox dropdown options */
         div[data-baseweb="select"] > div > div > ul > li {
             background-color: #000000 !important; /* Black background */
             color: #FFFFFF !important; /* White text */
         }
-
         /* Hover effect for dropdown options */
         div[data-baseweb="select"] > div > div > ul > li:hover {
             background-color: #555555 !important; /* Darker hover effect */
             color: #FFFFFF !important; /* White text on hover */
         }
-
         /* Number input box styling */
         input[type="number"] {
             background-color: #000000 !important; /* Black background */
@@ -501,10 +498,14 @@ def add_main_selectbox_styles():
             padding: 10px !important; /* Padding for input */
             border: 1px solid #555555 !important; /* Gray border */
         }
-
         /* Number input placeholder text color */
         ::placeholder {
-            color: #FFFFFF !important; /* Light gray placeholder */
+            color: #FFFFFF !important; /* White placeholder text */
+        }
+        /* Styling for + and - buttons */
+        .stTextInput button {
+            color: #FFFFFF !important; /* White text */
+            background-color: #000000 !important; /* Black background */
         }
         </style>
         """,
