@@ -13,7 +13,9 @@ import requests
 from io import StringIO
 
 # GitHub repository details
-GITHUB_TOKEN = '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'  # Replace with your GitHub personal access token
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')  # Replace with your GitHub personal access token
+if not GITHUB_TOKEN:
+    raise ValueError("GitHub token not found. Please set the GITHUB_TOKEN environment variable.")
 REPO_OWNER = 'RayyanPP'                      # Replace with your GitHub username
 REPO_NAME = 'project'                        # Replace with your repository name
 FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repository
@@ -22,7 +24,6 @@ FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repos
 with open('model_info.json', 'r') as f:
     model_info = json.load(f)
 
-print("scikit-learn successfully imported!")
 
 # Load models
 xgb_model = xgb.XGBRegressor()
