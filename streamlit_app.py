@@ -504,7 +504,7 @@ def add_main_selectbox_styles():
 
         /* Number input placeholder text color */
         ::placeholder {
-            color: #AAAAAA !important; /* Light gray placeholder */
+            color: #FFFFFF !important; /* Light gray placeholder */
         }
         </style>
         """,
