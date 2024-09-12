@@ -339,7 +339,7 @@ def show_home_page():
     s3 = st.selectbox('Number of Owners the car previously had', ('Select','First', 'Second', 'Third', 'Fourth & Above'))
     p5 = {'First': 0, 'Second': 1, 'Third': 2, 'Fourth & Above': 3}.get(s3, -1)
 
-    p6 = st.number_input('What is the mileage of the car in Km/l or equivalent ?', 0)
+    p6 = st.number_input('What is the mileage of the car in Km/l or equivalent ?', 0.0,step=0.10)
     p7 = st.number_input('What is the power of the car in bhp ?', 0, step=1)
     p8 = st.number_input('What is the engine capacity of the car in CC ?', 0, step=1)
     p9 = st.number_input('What is the number of passenger seats in the car ?', 0, 20, step=1)
