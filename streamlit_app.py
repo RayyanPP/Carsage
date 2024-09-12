@@ -482,6 +482,36 @@ def main():
     # Show Help & Support page content
     elif choice == "Help & Support":
         show_help_and_support()
+        # Add a styled predict button
+    
+    st.markdown(
+        """
+        <style>
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff; /* Button text color */
+            background-color: #FF5733; /* Bright orange color */
+            border-radius: 10px; /* Rounded corners */
+            border: 2px solid #C70039; /* Darker border color */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .custom-button:hover {
+            background-color: #C70039; /* Change color on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+        </style>
+
+        <a href="#" class="custom-button">Predict</a>
+        """,
+        unsafe_allow_html=True
+    )
 
 if __name__ == '__main__':
     main()
