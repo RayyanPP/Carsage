@@ -4,7 +4,7 @@ import numpy as np
 import json
 import streamlit as st
 from xgboost import XGBRegressor
-import datetime
+import datetime 
 import base64
 import os
 import sklearn
@@ -424,7 +424,7 @@ def add_sidebar_styles():
         <style>
         /* Sidebar container */
         [data-testid="stSidebar"] {
-            background-color: #3C4225; /* Deep Teal */
+            background-color: #4A6C6F; /* Deep Teal */
             padding-top: 20px; /* Padding at the top */
         }
         /* Sidebar title and widget headers */
