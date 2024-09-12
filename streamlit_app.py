@@ -55,6 +55,8 @@ def add_bg_from_local(image_path):
             .stApp {{
                 background-image: url("data:image/png;base64,{b64_image}");
                 background-size: cover;
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat;
             }}
             </style>
             """,
