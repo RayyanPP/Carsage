@@ -488,7 +488,7 @@ def add_main_selectbox_styles():
         /* Hover effect for dropdown options */
         div[data-baseweb="select"] > div > div > ul > li:hover {
             background-color: #555555 !important; /* Darker hover effect */
-            color: #FFFFFF !important; /* White text on hover */
+            color: #000000 !important; /* White text on hover */
         }
         /* Selected option in the dropdown */
         div[data-baseweb="select"] div[aria-selected="true"] {
@@ -510,7 +510,7 @@ def add_main_selectbox_styles():
         
         /* Styling for + and - buttons */
         .stTextInput button {
-            color: #FFFFFF !important; /* White text */
+            color: #000000 !important; /* White text */
             background-color: #000000 !important; /* Black background */
         }
         </style>
