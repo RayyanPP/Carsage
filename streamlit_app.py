@@ -427,14 +427,12 @@ def add_sidebar_styles():
             background-color: #014D4E; /* Deep Teal */
             padding-top: 20px; /* Padding at the top */
         }
-
         /* Sidebar title and widget headers */
         .css-1d391kg { /* This class selector may vary; check actual class in your browser */
             color: #E0FFFF; /* Light Cyan for titles */
             font-weight: bold; /* Bold text */
             font-size: 1.5rem; /* Increase font size */
         }
-
         /* Sidebar selectbox styling */
         .css-1cpxqw2 {
             background-color: #0A0A0A; /* Light pastel cyan */
@@ -443,25 +441,26 @@ def add_sidebar_styles():
             padding: 8px; /* Padding for selectbox */
             border: 2px solid #20B2AA; /* Light Sea Green border */
         }
-
         /* Sidebar items on hover */
         .css-1cpxqw2:hover {
             background-color: #20B2AA; /* Light Sea Green on hover */
             color: #014D4E; /* Deep Teal text on hover */
         }
-
         /* Sidebar section titles */
         .css-1d391kg h1 {
             font-family: 'Roboto', sans-serif; /* Font family */
             color: #FFFFFF; /* Light Cyan for text */
             margin-bottom: 10px; /* Space below */
         }
-
         /* Sidebar selectbox active item */
         .css-1cpxqw2:focus {
             background-color: #2E8B57; /* Sea Green for focused items */
             color: #FFFFFF; /* White text on focus */
             border: 2px solid #20B2AA; /* Light Sea Green border on focus */
+        }
+        /* NAVIGATION text color */
+        [data-testid="stSidebar"] .element-container:first-child .css-1d391kg {
+            color: yellow !important; /* Yellow color for NAVIGATION text */
         }
         </style>
         """,
