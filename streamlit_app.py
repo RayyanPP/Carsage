@@ -482,8 +482,8 @@ def add_main_selectbox_styles():
         }
         /* Main selectbox dropdown options */
         div[data-baseweb="select"] > div > div > ul > li {
-            background-color: #000000 !important; /* Black background */
-            color: #FFFFFF !important; /* White text */
+            background-color: #FFFFFF !important; /* Black background */
+            color: #000000 !important; /* White text */
         }
         /* Hover effect for dropdown options */
         div[data-baseweb="select"] > div > div > ul > li:hover {
@@ -492,24 +492,24 @@ def add_main_selectbox_styles():
         }
         /* Selected option in the dropdown */
         div[data-baseweb="select"] div[aria-selected="true"] {
-            background-color: #000000 !important; /* Black background */
-            color: #FFFFFF !important; /* White text */
+            background-color: #FFFFFF !important; /* Black background */
+            color: #000000 !important; /* White text */
         }
         /* Ensure the text of the selected option in the closed dropdown is white */
         div[data-baseweb="select"] div[class*="valueContainer"] div {
-            color: #FFFFFF !important; /* White text for selected option */
+            color: #000000 !important; /* White text for selected option */
         }
         /* Number input box styling */
         input[type="number"] {
-            background-color: #000000 !important; /* Black background */
-            color: #FFFFFF !important; /* White text */
+            background-color: #FFFFFF !important; /* Black background */
+            color: #000000 !important; /* White text */
             border-radius: 5px !important; /* Rounded corners */
             padding: 10px !important; /* Padding for input */
             border: 1px solid #555555 !important; /* Gray border */
         }
         /* Number input placeholder text color */
         ::placeholder {
-            color: #FFFFFF !important; /* White placeholder text */
+            color: #000000 !important; /* White placeholder text */
         }
         /* Styling for + and - buttons */
         .stTextInput button {
