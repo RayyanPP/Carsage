@@ -453,7 +453,7 @@ def add_sidebar_styles():
         /* Sidebar section titles */
         .css-1d391kg h1 {
             font-family: 'Roboto', sans-serif; /* Font family */
-            color: #E0FFFF; /* Light Cyan for text */
+            color: #FFFFFF; /* Light Cyan for text */
             margin-bottom: 10px; /* Space below */
         }
 
