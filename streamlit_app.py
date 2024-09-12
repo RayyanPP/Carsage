@@ -492,11 +492,24 @@ def add_main_selectbox_styles():
             background-color: #333333 !important; /* Darker hover effect */
             color: #FFFFFF !important; /* White text on hover */
         }
+
+        /* Number input box styling */
+        input[type="number"] {
+            background-color: #000000 !important; /* Black background */
+            color: #FFFFFF !important; /* White text */
+            border-radius: 5px !important; /* Rounded corners */
+            padding: 10px !important; /* Padding for input */
+            border: 1px solid #555555 !important; /* Gray border */
+        }
+
+        /* Number input placeholder text color */
+        ::placeholder {
+            color: #AAAAAA !important; /* Light gray placeholder */
+        }
         </style>
         """,
         unsafe_allow_html=True
     )
-
 
 
 def main():
