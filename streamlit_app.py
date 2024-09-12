@@ -139,7 +139,7 @@ def show_home_page():
     .main-title {
         color: #ff6347; /* Tomato Red */
         text-align: center; /* Center alignment */
-        font-family: 'Pacifico', cursive; /* Custom font */
+        font-family: 'Roboto', sans-serif; /* Custom font */
         font-size: 2.8em; /* Large font size */
         font-weight: bold; /* Bold text */
         text-transform: uppercase; /* Uppercase text */
@@ -468,9 +468,40 @@ def add_sidebar_styles():
         unsafe_allow_html=True
     )
 
+def add_main_selectbox_styles():
+    st.markdown(
+        """
+        <style>
+        /* Main selectbox input styling */
+        div[data-baseweb="select"] > div {
+            background-color: #000000 !important; /* Black background */
+            color: #FFFFFF !important; /* White text */
+            border-radius: 5px !important; /* Rounded corners */
+            padding: 10px !important; /* Padding for input */
+            border: 1px solid #555555 !important; /* Gray border */
+        }
+
+        /* Main selectbox dropdown options */
+        div[data-baseweb="select"] > div > div > ul > li {
+            background-color: #000000 !important; /* Black background */
+            color: #FFFFFF !important; /* White text */
+        }
+
+        /* Hover effect for dropdown options */
+        div[data-baseweb="select"] > div > div > ul > li:hover {
+            background-color: #333333 !important; /* Darker hover effect */
+            color: #FFFFFF !important; /* White text on hover */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
 
 def main():
     add_sidebar_styles()
+    add_main_selectbox_styles()
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
