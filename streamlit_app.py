@@ -462,6 +462,10 @@ def add_sidebar_styles():
         [data-testid="stSidebar"] .element-container:first-child .css-1d391kg {
             color: yellow !important; /* Yellow color for NAVIGATION text */
         }
+        /* Select the car brand text color */
+        [data-testid="stSidebar"] .element-container:nth-child(2) .css-1d391kg {
+            color: red !important; /* Red color for "Select the car brand" text */
+        }
         </style>
         """,
         unsafe_allow_html=True
