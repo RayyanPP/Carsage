@@ -140,7 +140,7 @@ def show_home_page():
         color: #ff6347; /* Tomato Red */
         text-align: center; /* Center alignment */
         font-family: 'Pacifico', cursive; /* Custom font */
-        font-size: 2.9em; /* Large font size */
+        font-size: 2.8em; /* Large font size */
         font-weight: bold; /* Bold text */
         text-transform: uppercase; /* Uppercase text */
         background: linear-gradient(90deg, rgba(255,99,71,1) 100%, rgba(255,255,255,1) 100%); /* Gradient background */
@@ -437,8 +437,8 @@ def add_sidebar_styles():
 
         /* Sidebar selectbox styling */
         .css-1cpxqw2 {
-            background-color: #E0F7E9; /* Light pastel cyan */
-            color: #014D4E; /* Matching Deep Teal text */
+            background-color: #0A0A0A; /* Light pastel cyan */
+            color: #FFFFFF; /* Matching Deep Teal text */
             border-radius: 10px; /* Rounded corners */
             padding: 8px; /* Padding for selectbox */
             border: 2px solid #20B2AA; /* Light Sea Green border */
