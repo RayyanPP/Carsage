@@ -436,7 +436,7 @@ def add_sidebar_styles():
 
         /* Sidebar selectbox styling */
         .css-1cpxqw2 {
-            background-color: #B2DFDB; /* Light pastel cyan */
+            background-color: #E0F7E9; /* Light pastel cyan */
             color: #004D40; /* Dark cyan text */
             border-radius: 10px; /* Rounded corners */
             padding: 8px; /* Padding for selectbox */
