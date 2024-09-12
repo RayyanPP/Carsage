@@ -507,10 +507,7 @@ def add_main_selectbox_styles():
             padding: 10px !important; /* Padding for input */
             border: 1px solid #555555 !important; /* Gray border */
         }
-        /* Number input placeholder text color */
-        ::placeholder {
-            color: #000000 !important; /* White placeholder text */
-        }
+        
         /* Styling for + and - buttons */
         .stTextInput button {
             color: #FFFFFF !important; /* White text */
