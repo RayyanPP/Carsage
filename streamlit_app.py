@@ -135,6 +135,7 @@ def show_home_page():
     """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     .main-title {
         color: #ff6347; /* Tomato Red */
         text-align: center; /* Center alignment */
@@ -149,7 +150,7 @@ def show_home_page():
         margin: 20px 0; /* Margin above and below */
         }
     .sub-text {
-        color: #EC137A; /* Greyish blue */
+        color: #0A0A0A; /* Greyish blue */
         text-align: center; /* Center alignment */
         font-family: 'Pacifico', cursive; /* Custom font */
         font-size: 1.1em; /* Medium font size */
