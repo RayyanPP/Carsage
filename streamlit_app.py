@@ -423,13 +423,13 @@ def add_sidebar_styles():
         <style>
         /* Sidebar container */
         [data-testid="stSidebar"] {
-            background-color: #014D4E; /* Soft pastel mint */
+            background-color: #014D4E; /* Deep Teal */
             padding-top: 20px; /* Padding at the top */
         }
 
         /* Sidebar title and widget headers */
-        .css-1d391kg { /* This may vary; check actual class in your browser */
-            color: #FFFFFF; /* Dark grey for text */
+        .css-1d391kg { /* This class selector may vary; check actual class in your browser */
+            color: #E0FFFF; /* Light Cyan for titles */
             font-weight: bold; /* Bold text */
             font-size: 1.5rem; /* Increase font size */
         }
@@ -437,27 +437,36 @@ def add_sidebar_styles():
         /* Sidebar selectbox styling */
         .css-1cpxqw2 {
             background-color: #E0F7E9; /* Light pastel cyan */
-            color: #004D40; /* Dark cyan text */
+            color: #014D4E; /* Matching Deep Teal text */
             border-radius: 10px; /* Rounded corners */
             padding: 8px; /* Padding for selectbox */
+            border: 2px solid #20B2AA; /* Light Sea Green border */
         }
 
         /* Sidebar items on hover */
         .css-1cpxqw2:hover {
-            background-color: #228B22; /* Light green on hover */
-            color: black; /* Black text on hover */
+            background-color: #20B2AA; /* Light Sea Green on hover */
+            color: #014D4E; /* Deep Teal text on hover */
         }
 
-        /* Sidebar titles (like "Navigation") */
+        /* Sidebar section titles */
         .css-1d391kg h1 {
             font-family: 'Roboto', sans-serif; /* Font family */
-            color: #FFFFFF; /* Text color */
+            color: #E0FFFF; /* Light Cyan for text */
             margin-bottom: 10px; /* Space below */
+        }
+
+        /* Sidebar selectbox active item */
+        .css-1cpxqw2:focus {
+            background-color: #2E8B57; /* Sea Green for focused items */
+            color: #FFFFFF; /* White text on focus */
+            border: 2px solid #20B2AA; /* Light Sea Green border on focus */
         }
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 def main():
     add_sidebar_styles()
