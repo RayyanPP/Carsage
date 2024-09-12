@@ -424,7 +424,7 @@ def add_sidebar_styles():
         <style>
         /* Sidebar container */
         [data-testid="stSidebar"] {
-            background-color: #014D4E; /* Deep Teal */
+            background-color: #3C4225; /* Deep Teal */
             padding-top: 20px; /* Padding at the top */
         }
         /* Sidebar title and widget headers */
