@@ -416,12 +416,51 @@ def show_help_and_support():
     # Add links to external documentation or resources
     #st.subheader("Additional Resources")
     #st.write("For more detailed documentation, please visit our [Documentation Page](https://example.com/docs).")
+def add_sidebar_styles():
+    st.markdown(
+        """
+        <style>
+        /* Sidebar background color */
+        [data-testid="stSidebar"] {
+            background-color: #f0f2f6;
+            padding: 20px;
+        }
+        /* Sidebar header */
+        .sidebar .sidebar-content h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        /* Sidebar selectbox styles */
+        .stSelectbox > div:first-child {
+            background-color: #ff6347; /* Tomato Red */
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        /* Navigation menu item hover */
+        .stSelectbox .css-1cpxqw2:hover {
+            background-color: #ffa07a; /* Light Salmon */
+            color: black;
+        }
+        /* Sidebar titles */
+        .css-18e3th9 {
+            font-family: 'Roboto', sans-serif; /* Change font family */
+            color: #2c3e50; /* Change text color */
+            font-weight: bold; /* Make text bold */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 def main():
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
-    choice = st.sidebar.radio("Select a page", menu)
+    choice = st.sidebar.selectbox("Select a page", menu)
 
     # Show Home page content
     if choice == "Home":
