@@ -380,7 +380,7 @@ def show_home_page():
 def show_help_and_support():
     remove_bg()
     st.title("Help & Support")
-    st.write("Here you can find help and support for using the app.")
+    st.markdown('<h3 style="color:#ff6347;">Here you can find help and support for using the app</h3>', unsafe_allow_html=True)
 
     # Add FAQs
     st.subheader("Frequently Asked Questions")
