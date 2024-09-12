@@ -481,11 +481,6 @@ def add_main_selectbox_styles():
             border: 1px solid #555555 !important; /* Gray border */
         }
 
-        /* Style the text inside the select input field */
-        div[data-baseweb="select"] > div > div {
-            color: #FFFFFF !important; /* Ensures text inside select is white */
-        }
-
         /* Main selectbox dropdown options */
         div[data-baseweb="select"] > div > div > ul > li {
             background-color: #000000 !important; /* Black background */
