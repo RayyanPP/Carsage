@@ -421,7 +421,7 @@ def main():
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
-    choice = st.sidebar.selectbox("Select a page", menu)
+    choice = st.sidebar.radio("Select a page", menu)
 
     # Show Home page content
     if choice == "Home":
