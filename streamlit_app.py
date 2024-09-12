@@ -451,7 +451,7 @@ def add_sidebar_styles():
         /* Sidebar titles (like "Navigation") */
         .css-1d391kg h1 {
             font-family: 'Roboto', sans-serif; /* Font family */
-            color: #2C3E50; /* Text color */
+            color: #FFFFFF; /* Text color */
             margin-bottom: 10px; /* Space below */
         }
         </style>
