@@ -137,7 +137,7 @@ def show_home_page():
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
     .main-title {
-        color: #ff6347; /* Tomato Red */
+        color: #FF7F50; /* Coral */
         text-align: center; /* Center alignment */
         font-family: 'Roboto', sans-serif; /* Custom font */
         font-size: 2.8em; /* Large font size */
