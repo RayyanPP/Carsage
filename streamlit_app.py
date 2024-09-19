@@ -495,7 +495,7 @@ def main():
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: #f1f1f1;
+        background-color: #4A6C6F;
         color: black;
         text-align: center;
         padding: 10px;
