@@ -486,25 +486,26 @@ def main():
     # Show Help & Support page content
     elif choice == "Help & Support":
         show_help_and_support()
-footer = f"""
-    <style>
-    .footer {{
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #f1f1f1;
-        color: black;
-        text-align: center;
-        padding: 10px;
-        font-size: small;
-    }}
-    </style>
-    <div class="footer">
-        <p>Copyright © | All Rights Reserved  &copy; {2024}</p>
-    </div>
-    """
-st.markdown(footer, unsafe_allow_html=True)
+    footer = """
+        <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: small;
+            z-index: 9999;
+        }
+        </style>
+        <div class="footer">
+            <p>Copyright © | All Rights Reserved  &copy; 2024</p>
+        </div>
+        """
+    st.markdown(footer, unsafe_allow_html=True)
         
 if __name__ == '__main__':
     main()
