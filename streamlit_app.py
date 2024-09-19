@@ -129,7 +129,7 @@ def save_to_file(name, email, message):
         return False
         
 def show_home_page():
-    add_bg_from_local(r'greencar.jpg')  # Ensure the path is correct
+    add_bg_from_local(r'bluecar.jpg')  # Ensure the path is correct
     st.markdown('<h1 class="main-title">Car Price Prediction Using Hybrid ML Model</h1>', unsafe_allow_html=True)
     st.markdown('<p class="sub-text">Welcome to the Car Price Prediction App. Fill in the details to predict the car price</p>', unsafe_allow_html=True)
     st.markdown(
