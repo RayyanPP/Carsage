@@ -502,7 +502,7 @@ def main():
         }
         </style>
         <div class="footer">
-            <p>Copyright © &copy; 2024 | All Rights Reserved</p>
+            <p>Copyright &copy; 2024 | All Rights Reserved</p>
         </div>
         """
     st.markdown(footer, unsafe_allow_html=True)
