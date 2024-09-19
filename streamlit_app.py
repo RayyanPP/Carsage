@@ -22,6 +22,7 @@ if not GITHUB_TOKEN:
 REPO_OWNER = 'RayyanPP'                      # Replace with your GitHub username
 REPO_NAME = 'project'                        # Replace with your repository name
 FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repository
+owner_name = "Rayyan"
 
 # Load model info
 with open('model_info.json', 'r') as f:
@@ -515,7 +516,7 @@ def main():
     }
     </style>
     <div class="footer">
-        <p>Copyright &copy; 2024 | All Rights Reserved to {"Rayyan"}</p>
+        <p>Copyright &copy; 2024 | All Rights Reserved to {owner_name}</p>
         <div class="footer-icons">
             <a href="https://www.instagram.com/i.rayyan__" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
