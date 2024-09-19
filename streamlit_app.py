@@ -486,26 +486,53 @@ def main():
     # Show Help & Support page content
     elif choice == "Help & Support":
         show_help_and_support()
+        
     footer = """
-        <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            color: black;
-            text-align: center;
-            padding: 10px;
-            font-size: small;
-            z-index: 9999;
-        }
-        </style>
-        <div class="footer">
-            <p>Copyright &copy; 2024 | All Rights Reserved</p>
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        font-size: small;
+        z-index: 9999;
+    }
+    .footer-icons a {
+        margin: 0 15px; /* Spacing between icons */
+        text-decoration: none;
+        color: black;
+    }
+    .footer-icons a:hover {
+        color: #0A66C2; /* Change color on hover for LinkedIn */
+    }
+    .footer-icons img {
+        width: 25px; /* Size of the icons */
+        height: 25px;
+    }
+    </style>
+    <div class="footer">
+        <p>Copyright &copy; 2024 | All Rights Reserved to {"Rayyan"}</p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/i.rayyan__" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/+918301080170" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+            <a href="mailto:rayyanpp502@gmail.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/rayyan-pp-5721ab309" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
         </div>
-        """
-    st.markdown(footer, unsafe_allow_html=True)
+    </div>
+    """
+st.markdown(footer, unsafe_allow_html=True)
         
 if __name__ == '__main__':
     main()
