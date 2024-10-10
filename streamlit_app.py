@@ -130,7 +130,7 @@ def save_to_file(name, email, message):
         
 def show_home_page():
     add_bg_from_local(r'skycar.png')  # Ensure the path is correct
-    st.markdown('<h1 class="main-title">CarSage: Unlock Your Ride's True Value</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">Used Car Price Prediction Using Hybrid ML Model</h1>', unsafe_allow_html=True)
     st.markdown('<p class="sub-text">Welcome to the Car Price Prediction App. Fill in the details to predict the car price</p>', unsafe_allow_html=True)
     st.markdown(
     """
@@ -478,7 +478,7 @@ def main():
     # Create navigation options
     st.sidebar.title("Navigation")
     menu = ["Home", "Help & Support"]
-    choice = st.sidebar.radio("Select a page", menu)
+    choice = st.sidebar.selectbox("Select a page", menu)
 
     # Show Home page content
     if choice == "Home":
