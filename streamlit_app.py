@@ -140,10 +140,9 @@ def show_home_page():
     .main-title {
         color: #FF7F50; /* Coral */
         text-align: center; /* Center alignment */
-        font-family: 'Roboto', sans-serif; /* Custom font */
+        font-family: 'Pacifico', cursive; /* Custom font */
         font-size: 2.8em; /* Large font size */
         font-weight: bold; /* Bold text */
-        text-transform: uppercase; /* Uppercase text */
         background: linear-gradient(90deg, rgba(255,99,71,1) 100%, rgba(255,255,255,1) 100%); /* Gradient background */
         -webkit-background-clip: text; /* Clip background to text */
         -webkit-text-fill-color: transparent; /* Transparent text fill */
