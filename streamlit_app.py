@@ -329,8 +329,8 @@ def show_home_page():
         selected_model = st.selectbox('Select the Car Model',['Select'] + Model)
     
     year_options = list(range(2000, 2025))
-    p1 = st.selectbox('In which year car was manufactured ?',['Select'] + year_options)
-    p2 = st.number_input('What is distance covered by the car in Kilometers ?', 0, step=100)
+    p1 = st.selectbox('In which year your car was manufactured ?',['Select'] + year_options)
+    p2 = st.number_input('What is the distance covered by the car in Kilometers ?', 0, step=100)
     s1 = st.selectbox('What is the fuel type of the car ?', ('Select','CNG', 'Diesel', 'Petrol', 'LPG', 'Electric'))
     p3 = {'CNG': 0, 'Diesel': 1, 'Petrol': 2, 'LPG': 3, 'Electric': 4}.get(s1, -1)
 
