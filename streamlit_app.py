@@ -410,7 +410,7 @@ def show_help_and_support():
         submitted = st.form_submit_button("Submit")
         if submitted:
             if save_to_file(name, email, message):
-                st.success("Thank you for your message! We have saved your contact details.")
+                st.success("Thank you for your message! We will reach you out soon!!!")
             else:
                 st.error("There was an error saving your message. Please try again later.")
 
