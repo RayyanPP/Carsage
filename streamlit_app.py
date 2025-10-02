@@ -20,7 +20,7 @@ GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')  # Replace with your GitHub personal ac
 if not GITHUB_TOKEN:
     raise ValueError("GitHub token not found. Please set the GITHUB_TOKEN environment variable.")
 REPO_OWNER = 'RayyanPP'                      # Replace with your GitHub username
-REPO_NAME = 'project'                        # Replace with your repository name
+REPO_NAME = 'Carsage'                        # Replace with your repository name
 FILE_PATH = 'file_path.csv'                  # Path to the CSV file in the repository
 owner_name = "Rayyan"
 
@@ -536,3 +536,4 @@ def main():
         
 if __name__ == '__main__':
     main()
+
